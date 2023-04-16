@@ -14,6 +14,8 @@
 		431A433229EAA53100B7775D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 431A433129EAA53100B7775D /* Assets.xcassets */; };
 		431A433529EAA53100B7775D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 431A433329EAA53100B7775D /* LaunchScreen.storyboard */; };
 		431A436D29EB3F6800B7775D /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431A436C29EB3F6800B7775D /* ResultViewController.swift */; };
+		431A436F29EB4C2700B7775D /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431A436E29EB4C2700B7775D /* CalculatorBrain.swift */; };
+		431A438429EBCC5100B7775D /* BMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431A438329EBCC5100B7775D /* BMI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		431A433429EAA53100B7775D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		431A433629EAA53100B7775D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		431A436C29EB3F6800B7775D /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		431A436E29EB4C2700B7775D /* CalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
+		431A438329EBCC5100B7775D /* BMI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,8 @@
 		431A433F29EAB04600B7775D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				431A438329EBCC5100B7775D /* BMI.swift */,
+				431A436E29EB4C2700B7775D /* CalculatorBrain.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -168,6 +174,8 @@
 				431A432D29EAA52700B7775D /* CalculateViewController.swift in Sources */,
 				431A432929EAA52700B7775D /* AppDelegate.swift in Sources */,
 				431A432B29EAA52700B7775D /* SceneDelegate.swift in Sources */,
+				431A436F29EB4C2700B7775D /* CalculatorBrain.swift in Sources */,
+				431A438429EBCC5100B7775D /* BMI.swift in Sources */,
 				431A436D29EB3F6800B7775D /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
