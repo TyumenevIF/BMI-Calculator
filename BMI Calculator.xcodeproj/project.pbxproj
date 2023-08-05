@@ -10,12 +10,14 @@
 		431A432929EAA52700B7775D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431A432829EAA52700B7775D /* AppDelegate.swift */; };
 		431A432B29EAA52700B7775D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431A432A29EAA52700B7775D /* SceneDelegate.swift */; };
 		431A432D29EAA52700B7775D /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431A432C29EAA52700B7775D /* CalculateViewController.swift */; };
-		431A433029EAA52700B7775D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 431A432E29EAA52700B7775D /* Main.storyboard */; };
 		431A433229EAA53100B7775D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 431A433129EAA53100B7775D /* Assets.xcassets */; };
 		431A433529EAA53100B7775D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 431A433329EAA53100B7775D /* LaunchScreen.storyboard */; };
 		431A436D29EB3F6800B7775D /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431A436C29EB3F6800B7775D /* ResultViewController.swift */; };
 		431A436F29EB4C2700B7775D /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431A436E29EB4C2700B7775D /* CalculatorBrain.swift */; };
 		431A438429EBCC5100B7775D /* BMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431A438329EBCC5100B7775D /* BMI.swift */; };
+		43CCB41C2A7C3F72004883C5 /* CalculateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CCB41B2A7C3F72004883C5 /* CalculateView.swift */; };
+		43CCB41E2A7C3F89004883C5 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CCB41D2A7C3F89004883C5 /* ResultView.swift */; };
+		43CCB4222A7C40E3004883C5 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 43CCB4212A7C40E3004883C5 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,13 +25,14 @@
 		431A432829EAA52700B7775D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		431A432A29EAA52700B7775D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		431A432C29EAA52700B7775D /* CalculateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateViewController.swift; sourceTree = "<group>"; };
-		431A432F29EAA52700B7775D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		431A433129EAA53100B7775D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		431A433429EAA53100B7775D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		431A433629EAA53100B7775D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		431A436C29EB3F6800B7775D /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		431A436E29EB4C2700B7775D /* CalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 		431A438329EBCC5100B7775D /* BMI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI.swift; sourceTree = "<group>"; };
+		43CCB41B2A7C3F72004883C5 /* CalculateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateView.swift; sourceTree = "<group>"; };
+		43CCB41D2A7C3F89004883C5 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43CCB4222A7C40E3004883C5 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +81,8 @@
 		431A433C29EAB02400B7775D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				431A432E29EAA52700B7775D /* Main.storyboard */,
+				43CCB41B2A7C3F72004883C5 /* CalculateView.swift */,
+				43CCB41D2A7C3F89004883C5 /* ResultView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -116,6 +121,9 @@
 			dependencies = (
 			);
 			name = "BMI Calculator";
+			packageProductDependencies = (
+				43CCB4212A7C40E3004883C5 /* SnapKit */,
+			);
 			productName = "BMI Calculator";
 			productReference = 431A432529EAA52700B7775D /* BMI Calculator.app */;
 			productType = "com.apple.product-type.application";
@@ -144,6 +152,9 @@
 				Base,
 			);
 			mainGroup = 431A431C29EAA52700B7775D;
+			packageReferences = (
+				43CCB4202A7C40E3004883C5 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 431A432629EAA52700B7775D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -160,7 +171,6 @@
 			files = (
 				431A433529EAA53100B7775D /* LaunchScreen.storyboard in Resources */,
 				431A433229EAA53100B7775D /* Assets.xcassets in Resources */,
-				431A433029EAA52700B7775D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,7 +184,9 @@
 				431A432D29EAA52700B7775D /* CalculateViewController.swift in Sources */,
 				431A432929EAA52700B7775D /* AppDelegate.swift in Sources */,
 				431A432B29EAA52700B7775D /* SceneDelegate.swift in Sources */,
+				43CCB41C2A7C3F72004883C5 /* CalculateView.swift in Sources */,
 				431A436F29EB4C2700B7775D /* CalculatorBrain.swift in Sources */,
+				43CCB41E2A7C3F89004883C5 /* ResultView.swift in Sources */,
 				431A438429EBCC5100B7775D /* BMI.swift in Sources */,
 				431A436D29EB3F6800B7775D /* ResultViewController.swift in Sources */,
 			);
@@ -183,14 +195,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		431A432E29EAA52700B7775D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				431A432F29EAA52700B7775D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		431A433329EAA53100B7775D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -330,7 +334,6 @@
 				INFOPLIST_FILE = "BMI Calculator/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -359,7 +362,6 @@
 				INFOPLIST_FILE = "BMI Calculator/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -398,6 +400,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		43CCB4202A7C40E3004883C5 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		43CCB4212A7C40E3004883C5 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 43CCB4202A7C40E3004883C5 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 431A431D29EAA52700B7775D /* Project object */;
 }
