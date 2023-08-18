@@ -63,7 +63,7 @@ class CalculateView: UIView {
         return stack
     }()
     
-    let heightSlider: UISlider = {
+    lazy var heightSlider: UISlider = {
         let slider = UISlider()
         slider.minimumValue = 0.0
         slider.maximumValue = 3.0
@@ -107,7 +107,7 @@ class CalculateView: UIView {
         return stack
     }()
     
-    let weightSlider: UISlider = {
+    lazy var weightSlider: UISlider = {
         let slider = UISlider()
         slider.minimumValue = 0
         slider.maximumValue = 200
@@ -118,7 +118,7 @@ class CalculateView: UIView {
         return slider
     }()
     
-    let calculateButton: UIButton = {
+    lazy var calculateButton: UIButton = {
         let button = UIButton()
         button.setTitle("CALCULATE", for: .normal)
         button.titleLabel?.font = .systemFont(ofSize: 20)

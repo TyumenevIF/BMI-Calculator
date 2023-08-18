@@ -59,7 +59,7 @@ class ResultView: UIView {
         return stack
     }()
     
-    let recalculateButton: UIButton = {
+    lazy var recalculateButton: UIButton = {
         let button = UIButton()
         button.setTitle("RECALCULATE", for: .normal)
         button.titleLabel?.font = .systemFont(ofSize: 20)
