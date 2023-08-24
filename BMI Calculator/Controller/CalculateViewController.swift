@@ -14,7 +14,6 @@ class CalculateViewController: UIViewController {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "calculate_background")
         imageView.contentMode = .scaleAspectFill
-        imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
     
@@ -25,12 +24,12 @@ class CalculateViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         calculateView.delegate = self
-        setViews()
+        setSubviews()
         setupConstraints()
     }
     
     // MARK: - Private Methods
-    private func setViews() {
+    private func setSubviews() {
         view.addSubview(calculateBackgroundImageView)
         view.addSubview(calculateView)
     }

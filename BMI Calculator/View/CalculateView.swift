@@ -26,7 +26,6 @@ class CalculateView: UIView {
         label.textColor = .darkGray
         label.textAlignment = .natural
         label.numberOfLines = 0
-        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
@@ -37,7 +36,6 @@ class CalculateView: UIView {
         label.textColor = .darkGray
         label.textAlignment = .natural
         label.numberOfLines = 1
-        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
@@ -48,7 +46,6 @@ class CalculateView: UIView {
         label.textColor = .darkGray
         label.textAlignment = .natural
         label.numberOfLines = 1
-        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
@@ -81,7 +78,6 @@ class CalculateView: UIView {
         label.textColor = .darkGray
         label.textAlignment = .natural
         label.numberOfLines = 1
-        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
@@ -92,7 +88,6 @@ class CalculateView: UIView {
         label.textColor = .darkGray
         label.textAlignment = .natural
         label.numberOfLines = 1
-        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
@@ -148,8 +143,8 @@ class CalculateView: UIView {
     // MARK: - Initializers
     override init(frame: CGRect) {
         super.init(frame: frame)
-        addViews()
-        addConstraints()
+        setSubviews()
+        setupConstraints()
     }
     
     required init?(coder: NSCoder) {
@@ -157,11 +152,11 @@ class CalculateView: UIView {
     }
     
     // MARK: - Private Methods
-    private func addViews() {
+    private func setSubviews() {
         addSubview(mainStackView)
     }
     
-    private func addConstraints() {
+    private func setupConstraints() {
         mainStackView.snp.makeConstraints { make in
             make.top.equalTo(safeAreaLayoutGuide.snp.top)
             make.leading.equalToSuperview()

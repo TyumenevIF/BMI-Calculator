@@ -23,7 +23,6 @@ class ResultView: UIView {
         label.textColor = .white
         label.textAlignment = .center
         label.numberOfLines = 0
-        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
@@ -33,7 +32,6 @@ class ResultView: UIView {
         label.textColor = .white
         label.textAlignment = .center
         label.numberOfLines = 0
-        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
@@ -43,7 +41,6 @@ class ResultView: UIView {
         label.textColor = .white
         label.textAlignment = .center
         label.numberOfLines = 0
-        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
@@ -74,8 +71,8 @@ class ResultView: UIView {
     // MARK: - Initializers
     override init(frame: CGRect) {
         super.init(frame: frame)
-        addViews()
-        addConstraints()
+        setSubviews()
+        setupConstraints()
     }
     
     required init?(coder: NSCoder) {
@@ -83,12 +80,12 @@ class ResultView: UIView {
     }
     
     // MARK: - Private Methods
-    private func addViews() {
+    private func setSubviews() {
         addSubview(stackView)
         addSubview(recalculateButton)
     }
     
-    private func addConstraints() {
+    private func setupConstraints() {
         stackView.snp.makeConstraints { (make) in
             make.centerX.equalToSuperview()
             make.centerY.equalToSuperview()

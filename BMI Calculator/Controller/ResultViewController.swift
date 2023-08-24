@@ -15,7 +15,6 @@ class ResultViewController: UIViewController {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "result_background")
         imageView.contentMode = .scaleAspectFill
-        imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
     
@@ -33,12 +32,12 @@ class ResultViewController: UIViewController {
         resultView.adviceLabel.text = advice
         view.backgroundColor = color
         
-        setViews()
+        setSubviews()
         setupConstraints()
     }
     
     // MARK: - Private Methods
-    private func setViews() {
+    private func setSubviews() {
         view.addSubview(resultBackgroundImageView)
         view.addSubview(resultView)
     }
